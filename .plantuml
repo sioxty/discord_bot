@@ -1,0 +1,21 @@
+@startuml
+
+class PlayerEngine {
+    - queues : list
+    + connetion(voice_id :int): Queue
+    - add_queue(queue:Queue): None
+    - del_queue(queue:Queue): None
+}
+
+class Queue {
+    - _id : int
+    - max_count : int = 50
+    - tracks :list
+    + next(): Track | None
+
+}
+
+
+PlayerEngine o-- Queue
+
+@enduml

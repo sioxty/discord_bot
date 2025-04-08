@@ -1,0 +1,6 @@
+disnake 
+yt-dlp
+dotenv
+PyNaCl
+fastapi
+uvicorn
