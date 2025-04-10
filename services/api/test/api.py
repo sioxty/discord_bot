@@ -35,7 +35,7 @@ async def test_add_user(client: AsyncClient):
 @pytest.mark.asyncio
 async def test_add_user_full(client: AsyncClient):
     data = {
-        "user_id": 1,
+        "user_id": 1 ,
         "favorite_tracks": [],
         "playlists": [
             
